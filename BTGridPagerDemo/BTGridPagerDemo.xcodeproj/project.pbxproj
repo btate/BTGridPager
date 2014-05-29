@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAFA378D193782400011BD16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA378C193782400011BD16 /* Foundation.framework */; };
+		AAFA378F193782400011BD16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA378E193782400011BD16 /* CoreGraphics.framework */; };
+		AAFA3791193782400011BD16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA3790193782400011BD16 /* UIKit.framework */; };
+		AAFA3797193782400011BD16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAFA3795193782400011BD16 /* InfoPlist.strings */; };
+		AAFA3799193782400011BD16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA3798193782400011BD16 /* main.m */; };
+		AAFA379D193782400011BD16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA379C193782400011BD16 /* AppDelegate.m */; };
+		AAFA37A0193782400011BD16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFA379E193782400011BD16 /* Main.storyboard */; };
+		AAFA37A3193782400011BD16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA37A2193782400011BD16 /* ViewController.m */; };
+		AAFA37A5193782400011BD16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFA37A4193782400011BD16 /* Images.xcassets */; };
+		AAFA37AC193782400011BD16 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA37AB193782400011BD16 /* XCTest.framework */; };
+		AAFA37AD193782400011BD16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA378C193782400011BD16 /* Foundation.framework */; };
+		AAFA37AE193782400011BD16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA3790193782400011BD16 /* UIKit.framework */; };
+		AAFA37B6193782400011BD16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAFA37B4193782400011BD16 /* InfoPlist.strings */; };
+		AAFA37B8193782400011BD16 /* BTGridPagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA37B7193782400011BD16 /* BTGridPagerDemoTests.m */; };
+		AAFA37C61937A0180011BD16 /* BTGridIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA37C31937A0180011BD16 /* BTGridIndex.m */; };
+		AAFA37C71937A0180011BD16 /* BTGridIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA37C31937A0180011BD16 /* BTGridIndex.m */; };
+		AAFA37C81937A0180011BD16 /* BTGridPager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA37C51937A0180011BD16 /* BTGridPager.m */; };
+		AAFA37C91937A0180011BD16 /* BTGridPager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA37C51937A0180011BD16 /* BTGridPager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAFA37AF193782400011BD16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAFA3781193782400011BD16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAFA3788193782400011BD16;
+			remoteInfo = BTGridPagerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAFA3789193782400011BD16 /* BTGridPagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTGridPagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFA378C193782400011BD16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAFA378E193782400011BD16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AAFA3790193782400011BD16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AAFA3794193782400011BD16 /* BTGridPagerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTGridPagerDemo-Info.plist"; sourceTree = "<group>"; };
+		AAFA3796193782400011BD16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAFA3798193782400011BD16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAFA379A193782400011BD16 /* BTGridPagerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTGridPagerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		AAFA379B193782400011BD16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAFA379C193782400011BD16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAFA379F193782400011BD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAFA37A1193782400011BD16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AAFA37A2193782400011BD16 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AAFA37A4193782400011BD16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AAFA37AA193782400011BD16 /* BTGridPagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTGridPagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFA37AB193782400011BD16 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AAFA37B3193782400011BD16 /* BTGridPagerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTGridPagerDemoTests-Info.plist"; sourceTree = "<group>"; };
+		AAFA37B5193782400011BD16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAFA37B7193782400011BD16 /* BTGridPagerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTGridPagerDemoTests.m; sourceTree = "<group>"; };
+		AAFA37C21937A0180011BD16 /* BTGridIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGridIndex.h; sourceTree = "<group>"; };
+		AAFA37C31937A0180011BD16 /* BTGridIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGridIndex.m; sourceTree = "<group>"; };
+		AAFA37C41937A0180011BD16 /* BTGridPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGridPager.h; sourceTree = "<group>"; };
+		AAFA37C51937A0180011BD16 /* BTGridPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGridPager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAFA3786193782400011BD16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFA378F193782400011BD16 /* CoreGraphics.framework in Frameworks */,
+				AAFA3791193782400011BD16 /* UIKit.framework in Frameworks */,
+				AAFA378D193782400011BD16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFA37A7193782400011BD16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFA37AC193782400011BD16 /* XCTest.framework in Frameworks */,
+				AAFA37AE193782400011BD16 /* UIKit.framework in Frameworks */,
+				AAFA37AD193782400011BD16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAFA3780193782400011BD16 = {
+			isa = PBXGroup;
+			children = (
+				AAFA3792193782400011BD16 /* BTGridPagerDemo */,
+				AAFA37C11937A0180011BD16 /* BTGridPager */,
+				AAFA37B1193782400011BD16 /* BTGridPagerDemoTests */,
+				AAFA378B193782400011BD16 /* Frameworks */,
+				AAFA378A193782400011BD16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAFA378A193782400011BD16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAFA3789193782400011BD16 /* BTGridPagerDemo.app */,
+				AAFA37AA193782400011BD16 /* BTGridPagerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAFA378B193782400011BD16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAFA378C193782400011BD16 /* Foundation.framework */,
+				AAFA378E193782400011BD16 /* CoreGraphics.framework */,
+				AAFA3790193782400011BD16 /* UIKit.framework */,
+				AAFA37AB193782400011BD16 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAFA3792193782400011BD16 /* BTGridPagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AAFA379B193782400011BD16 /* AppDelegate.h */,
+				AAFA379C193782400011BD16 /* AppDelegate.m */,
+				AAFA379E193782400011BD16 /* Main.storyboard */,
+				AAFA37A1193782400011BD16 /* ViewController.h */,
+				AAFA37A2193782400011BD16 /* ViewController.m */,
+				AAFA37A4193782400011BD16 /* Images.xcassets */,
+				AAFA3793193782400011BD16 /* Supporting Files */,
+			);
+			path = BTGridPagerDemo;
+			sourceTree = "<group>";
+		};
+		AAFA3793193782400011BD16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAFA3794193782400011BD16 /* BTGridPagerDemo-Info.plist */,
+				AAFA3795193782400011BD16 /* InfoPlist.strings */,
+				AAFA3798193782400011BD16 /* main.m */,
+				AAFA379A193782400011BD16 /* BTGridPagerDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAFA37B1193782400011BD16 /* BTGridPagerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAFA37B7193782400011BD16 /* BTGridPagerDemoTests.m */,
+				AAFA37B2193782400011BD16 /* Supporting Files */,
+			);
+			path = BTGridPagerDemoTests;
+			sourceTree = "<group>";
+		};
+		AAFA37B2193782400011BD16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAFA37B3193782400011BD16 /* BTGridPagerDemoTests-Info.plist */,
+				AAFA37B4193782400011BD16 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAFA37C11937A0180011BD16 /* BTGridPager */ = {
+			isa = PBXGroup;
+			children = (
+				AAFA37C21937A0180011BD16 /* BTGridIndex.h */,
+				AAFA37C31937A0180011BD16 /* BTGridIndex.m */,
+				AAFA37C41937A0180011BD16 /* BTGridPager.h */,
+				AAFA37C51937A0180011BD16 /* BTGridPager.m */,
+			);
+			name = BTGridPager;
+			path = ../BTGridPager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAFA3788193782400011BD16 /* BTGridPagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAFA37BB193782400011BD16 /* Build configuration list for PBXNativeTarget "BTGridPagerDemo" */;
+			buildPhases = (
+				AAFA3785193782400011BD16 /* Sources */,
+				AAFA3786193782400011BD16 /* Frameworks */,
+				AAFA3787193782400011BD16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTGridPagerDemo;
+			productName = BTGridPagerDemo;
+			productReference = AAFA3789193782400011BD16 /* BTGridPagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAFA37A9193782400011BD16 /* BTGridPagerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAFA37BE193782400011BD16 /* Build configuration list for PBXNativeTarget "BTGridPagerDemoTests" */;
+			buildPhases = (
+				AAFA37A6193782400011BD16 /* Sources */,
+				AAFA37A7193782400011BD16 /* Frameworks */,
+				AAFA37A8193782400011BD16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAFA37B0193782400011BD16 /* PBXTargetDependency */,
+			);
+			name = BTGridPagerDemoTests;
+			productName = BTGridPagerDemoTests;
+			productReference = AAFA37AA193782400011BD16 /* BTGridPagerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAFA3781193782400011BD16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Brandon Tate";
+				TargetAttributes = {
+					AAFA37A9193782400011BD16 = {
+						TestTargetID = AAFA3788193782400011BD16;
+					};
+				};
+			};
+			buildConfigurationList = AAFA3784193782400011BD16 /* Build configuration list for PBXProject "BTGridPagerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAFA3780193782400011BD16;
+			productRefGroup = AAFA378A193782400011BD16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAFA3788193782400011BD16 /* BTGridPagerDemo */,
+				AAFA37A9193782400011BD16 /* BTGridPagerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAFA3787193782400011BD16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFA37A5193782400011BD16 /* Images.xcassets in Resources */,
+				AAFA3797193782400011BD16 /* InfoPlist.strings in Resources */,
+				AAFA37A0193782400011BD16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFA37A8193782400011BD16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFA37B6193782400011BD16 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAFA3785193782400011BD16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFA37C61937A0180011BD16 /* BTGridIndex.m in Sources */,
+				AAFA37C81937A0180011BD16 /* BTGridPager.m in Sources */,
+				AAFA37A3193782400011BD16 /* ViewController.m in Sources */,
+				AAFA379D193782400011BD16 /* AppDelegate.m in Sources */,
+				AAFA3799193782400011BD16 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFA37A6193782400011BD16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFA37C91937A0180011BD16 /* BTGridPager.m in Sources */,
+				AAFA37C71937A0180011BD16 /* BTGridIndex.m in Sources */,
+				AAFA37B8193782400011BD16 /* BTGridPagerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAFA37B0193782400011BD16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAFA3788193782400011BD16 /* BTGridPagerDemo */;
+			targetProxy = AAFA37AF193782400011BD16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAFA3795193782400011BD16 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAFA3796193782400011BD16 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AAFA379E193782400011BD16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAFA379F193782400011BD16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAFA37B4193782400011BD16 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAFA37B5193782400011BD16 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAFA37B9193782400011BD16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AAFA37BA193782400011BD16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAFA37BC193782400011BD16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTGridPagerDemo/BTGridPagerDemo-Prefix.pch";
+				INFOPLIST_FILE = "BTGridPagerDemo/BTGridPagerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AAFA37BD193782400011BD16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTGridPagerDemo/BTGridPagerDemo-Prefix.pch";
+				INFOPLIST_FILE = "BTGridPagerDemo/BTGridPagerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AAFA37BF193782400011BD16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTGridPagerDemo.app/BTGridPagerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTGridPagerDemo/BTGridPagerDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BTGridPagerDemoTests/BTGridPagerDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AAFA37C0193782400011BD16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTGridPagerDemo.app/BTGridPagerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTGridPagerDemo/BTGridPagerDemo-Prefix.pch";
+				INFOPLIST_FILE = "BTGridPagerDemoTests/BTGridPagerDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAFA3784193782400011BD16 /* Build configuration list for PBXProject "BTGridPagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFA37B9193782400011BD16 /* Debug */,
+				AAFA37BA193782400011BD16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAFA37BB193782400011BD16 /* Build configuration list for PBXNativeTarget "BTGridPagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFA37BC193782400011BD16 /* Debug */,
+				AAFA37BD193782400011BD16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AAFA37BE193782400011BD16 /* Build configuration list for PBXNativeTarget "BTGridPagerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFA37BF193782400011BD16 /* Debug */,
+				AAFA37C0193782400011BD16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAFA3781193782400011BD16 /* Project object */;
+}
