@@ -7,31 +7,20 @@
 Pod::Spec.new do |s|
   s.name             = "BTGridPager"
   s.version          = "0.1.0"
-  s.summary          = "A short description of BTGridPager."
+  s.summary          = "BTGridLayout is a subclass of UIScrollView that allows horizontal and vertical view pagin for iOS."
   s.description      = <<-DESC
-                       An optional longer description of BTGridPager
+                       BTGridLayout is a subclass of UIScrollView that allows horizontal and vertical view pagin for iOS.  It
+                       allows for unlimited number of views to be paged through both vertically and horizontally.  
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/btate/BTGridPager"
   s.license          = 'MIT'
   s.author           = { "Brandon Tate" => "brandonntate@gmail.com" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/EXAMPLE'
+  s.source           = { :git => "https://github.com/btate/BTGridPager.git", :tag => s.version.to_s }
+  s.source_files = 'BTGridPager'
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
+  s.platform = :ios, '6.0'
   s.requires_arc = true
-
-  s.source_files = 'Classes'
-  s.resources = 'Assets/*.png'
-
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
 end
