@@ -12,7 +12,6 @@
     @private
                 CGPoint         _lastOffset;
                 int             _numRows;
-    __strong    BTGridIndex     *_currentIndex;
     
 }
 

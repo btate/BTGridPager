@@ -42,13 +42,19 @@ typedef NSUInteger BTGridResetMode;
 @protocol BTGridPagerDelegate;
 @protocol BTGridPagerDataSource;
 
-@interface BTGridPager : UIScrollView<UIScrollViewDelegate>
+@interface BTGridPager : UIScrollView<UIScrollViewDelegate>{
+    @private
+    __strong    BTGridIndex     *_currentIndex;
+}
 
 /** Data Source for the grid pager. */
 @property (nonatomic, weak) IBOutlet    id<BTGridPagerDataSource>     gridPagerDataSource;
 
 /** Delegate for grid pager actions. */
 @property (nonatomic, weak) IBOutlet    id<BTGridPagerDelegate>       gridPagerDelegate;
+
+/** The current index being displayed. */
+@property (nonatomic, readonly)         BTGridIndex                   *currentIndex;
 
 /** Number of views to load on each side of currently viewed slide.
  *  Defaults to 1
