@@ -10,8 +10,9 @@
 
 @interface BTGridPager(){
     @private
-                CGPoint         _lastOffset;
-                int             _numRows;
+    CGPoint         _lastOffset;
+    int             _numRows;
+    BOOL            _initCenterFlag;
     
 }
 
@@ -93,13 +94,19 @@
 
 - (void) layoutSubviews{
     [super layoutSubviews];
-    [self updateOffset];
+    
+    if (!_initCenterFlag)
+        [self updateOffset];
+    
+    _initCenterFlag = YES;
 }
 
 /**
  *  Sets up the scroll view properties
  */
 - (void) setup{
+    
+    _initCenterFlag = NO;
     
     // Setup Scroll View
     self.pagingEnabled = YES;
