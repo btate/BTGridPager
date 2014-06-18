@@ -91,6 +91,11 @@
     [self setup];
 }
 
+- (void) layoutSubviews{
+    [super layoutSubviews];
+    [self updateOffset];
+}
+
 /**
  *  Sets up the scroll view properties
  */
