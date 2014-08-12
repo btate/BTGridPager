@@ -36,4 +36,12 @@
     
 }
 
+
+-(id) copyWithZone: (NSZone *) zone
+{
+    BTGridIndex *copy = [[BTGridIndex allocWithZone: zone] initWithRow:self.row column:self.column];
+    
+    return copy;
+}
+
 @end

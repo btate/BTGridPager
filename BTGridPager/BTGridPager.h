@@ -76,6 +76,15 @@ typedef NSUInteger BTGridResetMode;
 - (void) reloadData: (BOOL) resetIndex;
 
 
+/**
+ *  Scrolls to a specific grid index.
+ *
+ *  @param gridIndex The grid index to scroll through.
+ *  @param animated Flag for animation
+ */
+- (void) scrollToIndex: (BTGridIndex *) gridIndex animated: (BOOL) animated;
+
+
 @end
 
 

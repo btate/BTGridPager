@@ -13,7 +13,7 @@
     CGPoint         _lastOffset;
     int             _numRows;
     BOOL            _initCenterFlag;
-    
+    BOOL            _canScrollToFrame;
 }
 
 /** The index for the current grid being displayed. */
@@ -107,6 +107,7 @@
 - (void) setup{
     
     _initCenterFlag = NO;
+    _canScrollToFrame = NO;
     
     // Setup Scroll View
     self.pagingEnabled = YES;
@@ -300,6 +301,53 @@
     
 }
 
+
+/**
+ *  Scrolls to a specific grid index.
+ *
+ *  @param gridIndex The grid index to scroll through.
+ *  @param animated Flag for animation
+ */
+- (void) scrollToIndex: (BTGridIndex *) gridIndex animated: (BOOL) animated{
+    
+    NSAssert([self.gridPagerDataSource respondsToSelector:@selector(gridPager:gridViewAtGridIndex:withFrame:)], @"Implement DataSource Methods!!!!!");
+    
+    
+    _canScrollToFrame = YES;
+    
+    
+    // Figure out left, right, etc.
+    BTGridIndex *gridPosition = [[BTGridIndex alloc] initWithRow:self.gridPadding column:self.gridPadding];
+    
+    // Figure out row direction
+    if (gridIndex.row > _currentIndex.row) {
+        gridPosition.row += 1;
+    }
+    else if(gridIndex.row < _currentIndex.row){
+        gridPosition.row -= 1;
+    }
+    
+    // Figure out column direction
+    if (gridIndex.column > _currentIndex.column) {
+        gridPosition.column += 1;
+    }
+    else if(gridIndex.column < _currentIndex.column){
+        gridPosition.column -= 1;
+    }
+    
+    // Update the view I'm scrolling to
+    CGRect frame = [self frameForGridPosition:gridPosition];
+    [self addSubview:[self.gridPagerDataSource gridPager:self gridViewAtGridIndex:[self wrapIndex:gridIndex] withFrame:frame]];
+    
+    
+    // Move it
+    _currentIndex = [self wrapIndex:gridIndex];
+    [self scrollRectToVisible:[self frameForGridPosition:gridPosition] animated:animated];
+    
+    if (!animated)
+        [self loadViewsForCurrentIndex];
+}
+
 #pragma mark - Gestures
 
 /**
@@ -310,12 +358,29 @@
 - (void)handleTap:(UITapGestureRecognizer *)recognizer {
     
     if ([self.gridPagerDelegate respondsToSelector:@selector(gridPager:didSelectViewAtGridIndex:)]) {
-        [self.gridPagerDelegate gridPager:self didSelectViewAtGridIndex:_currentIndex];
+        [self.gridPagerDelegate gridPager:self didSelectViewAtGridIndex: [_currentIndex copy]];
     }
     
 }
 
+
+#pragma mark - Overrides
+
+- (void) scrollRectToVisible:(CGRect)rect animated:(BOOL)animated{
+    if (_canScrollToFrame) {
+        [super scrollRectToVisible:rect animated:animated];
+    }
+    
+    _canScrollToFrame = NO;
+}
+
 #pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+    
+    [self loadViewsForCurrentIndex];
+    
+}
 
 - (void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     

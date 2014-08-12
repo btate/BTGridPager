@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BTGridIndex : NSObject
+@interface BTGridIndex : NSObject<NSCopying>
 
 @property (nonatomic)   int   row;
 @property (nonatomic)   int   column;
