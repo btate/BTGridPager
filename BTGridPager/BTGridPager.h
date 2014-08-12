@@ -68,6 +68,14 @@ typedef NSUInteger BTGridResetMode;
 @property (nonatomic)                   BTGridResetMode               gridResetMode;
 
 
+/**
+ *  Reloads the views.
+ *
+ *  @param resetIndex Flag for whether to reset the current index when reloading.
+ */
+- (void) reloadData: (BOOL) resetIndex;
+
+
 @end
 
 

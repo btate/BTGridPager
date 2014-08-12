@@ -284,6 +284,22 @@
     
 }
 
+/**
+ *  Reloads the views.
+ *
+ *  @param resetIndex Flag for whether to reset the current index when reloading.
+ */
+- (void) reloadData: (BOOL) resetIndex{
+    
+    if (resetIndex) {
+        _currentIndex.row = 0;
+        _currentIndex.column = 0;
+    }
+    
+    [self loadViewsForCurrentIndex];
+    
+}
+
 #pragma mark - Gestures
 
 /**
