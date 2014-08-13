@@ -164,6 +164,10 @@
     NSAssert([self.gridPagerDataSource respondsToSelector:@selector(numberOfRowsInGridPager:)], @"Implement DataSource Methods!!!!!");
     NSAssert([self.gridPagerDataSource respondsToSelector:@selector(gridPager:numberOfColumnsForRow:)], @"Implement DataSource Methods!!!!!");
     
+    if ([self.gridPagerDelegate respondsToSelector:@selector(gridPager:willChangePage:)]) {
+        [self.gridPagerDelegate gridPager:self willChangePage:[_currentIndex copy]];
+    }
+    
     _numRows = (int)[self.gridPagerDataSource numberOfRowsInGridPager:self];
     if (_numRows <= 0)
         return;
@@ -229,6 +233,9 @@
         [subview removeFromSuperview];
     }
 
+    if ([self.gridPagerDelegate respondsToSelector:@selector(gridPager:didChangePage:)]) {
+        [self.gridPagerDelegate gridPager:self didChangePage:[_currentIndex copy]];
+    }
 }
 
 /**

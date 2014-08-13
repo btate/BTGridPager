@@ -26,6 +26,22 @@ Implement the datasource/delegate methods in your controller.
 	 */
 	- (void) gridPager: (BTGridPager *) gridPager didSelectViewAtGridIndex: (BTGridIndex *) gridIndex;
 	
+	/**
+	 *  Tells the delegate that the grid pager will change pages.
+	 *
+	 *  @param gridPager The grid pager
+	 *  @param newIndex  The page index
+	 */
+	- (void) gridPager: (BTGridPager *) gridPager willChangePage: (BTGridIndex *) newIndex;
+
+	/**
+	 *  Tells the delegate that the grid pager changed pages.
+	 *
+	 *  @param gridPager The grid pager
+	 *  @param newIndex  The page index
+	 */
+	- (void) gridPager: (BTGridPager *) gridPager didChangePage: (BTGridIndex *) newIndex;
+	
 	@end
 	
 	/**
