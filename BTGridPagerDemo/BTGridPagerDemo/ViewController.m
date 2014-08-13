@@ -41,6 +41,26 @@
     NSLog(@"selected %@", gridIndex);
 }
 
+/**
+ *  Tells the delegate that the grid pager will change pages.
+ *
+ *  @param gridPager The grid pager
+ *  @param newIndex  The page index
+ */
+- (void) gridPager: (BTGridPager *) gridPager willChangePage: (BTGridIndex *) newIndex{
+    NSLog(@"will change pages %@", newIndex);
+}
+
+/**
+ *  Tells the delegate that the grid pager changed pages.
+ *
+ *  @param gridPager The grid pager
+ *  @param newIndex  The page index
+ */
+- (void) gridPager: (BTGridPager *) gridPager didChangePage: (BTGridIndex *) newIndex{
+    NSLog(@"on new page %@", newIndex);
+}
+
 #pragma mark - GridPagerDataSource
 
 /**
