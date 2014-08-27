@@ -175,18 +175,18 @@
     NSArray *oldSubviews = self.subviews;
     
     // Track grid position
-    int gridRow = 0;
+    NSInteger gridRow = 0;
     // One section back one section forward
-    for (int r = (_currentIndex.row - self.gridPadding); r <= (_currentIndex.row + self.gridPadding); r++) {
+    for (NSInteger r = (_currentIndex.row - self.gridPadding); r <= (_currentIndex.row + self.gridPadding); r++) {
         
         // Only need all views for current section
         if (_currentIndex.row == r) {
             
             // Track grid position
-            int gridCol = 0;
+            NSInteger gridCol = 0;
             
             // One view back one grid forward
-            for (int c = (_currentIndex.column - self.gridPadding); c <= (_currentIndex.column + self.gridPadding); c++) {
+            for (NSInteger c = (_currentIndex.column - self.gridPadding); c <= (_currentIndex.column + self.gridPadding); c++) {
                 
                 
                 // Index for view

@@ -11,7 +11,15 @@
 @implementation BTGridIndex
 
 
-- (id) initWithRow: (int) row column: (int) column{
+/**
+ *  Initializer with row column properties.
+ *
+ *  @param row    The index row
+ *  @param column The index column
+ *
+ *  @return The grid index
+ */
+- (id) initWithRow: (NSInteger) row column: (NSInteger) column{
     self = [super init];
     
     if (self) {
@@ -26,13 +34,22 @@
     return (self.row == object.row) && (self.column == object.column);
 }
 
-+ (BTGridIndex *) gridIndexWithRow: (int) row column: (int) column{
+
+/**
+ *  Class method for creating a grid index.
+ *
+ *  @param row    The index row
+ *  @param column The index column
+ *
+ *  @return The grid index
+ */
++ (BTGridIndex *) gridIndexWithRow: (NSInteger) row column: (NSInteger) column{
     return [[BTGridIndex alloc] initWithRow:row column:column];
 }
 
 - (NSString *) description{
     
-    return [NSString stringWithFormat:@"(%d, %d)", self.row, self.column];
+    return [NSString stringWithFormat:@"(%ld, %ld)", (long)self.row, (long)self.column];
     
 }
 
