@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "BTGridPager"
-  s.version          = "0.1.8"
+  s.version          = "0.1.9"
   s.summary          = "BTGridLayout is a subclass of UIScrollView that allows horizontal and vertical view pagin for iOS."
   s.description      = <<-DESC
                        BTGridLayout is a subclass of UIScrollView that allows horizontal and vertical view pagin for iOS.  It
